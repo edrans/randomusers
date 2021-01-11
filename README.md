@@ -1,7 +1,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hugolesta/NodeForm/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/edrans/randomusers?style=plastic)](https://github.com/edrans/randomusers/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
-# randomUsers
+# RandomUsers
 
 This is a simple application, it get data from [randomuser.me](https://randomuser.me/)
 
