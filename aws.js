@@ -20,7 +20,7 @@ module.exports = class Aws {
         });
     }
 
-    upload(bucketName,filePath,fileContent) {
+    putObject(bucketName,filePath,fileContent) {
         return new Promise( async (resolve, reject) => {
             try {
                 let params = {
@@ -37,6 +37,20 @@ module.exports = class Aws {
         });
     }
 
+    upload_file(bucketName, filePath, fileContentStream){
+        return new Promise( async (resolve, reject) => {
+            try {
+                let params = {
+                    Bucket: bucketName, 
+                    Key: filePath, 
+                    Body: fileContentStream
+                }
+                resolve(this.s3.upload(params).promise());
+            } catch (error) {
+                reject(error)
+            }
+        });
+    }
     makeDotEnv(bucketName,dotEnvPathFile){
         return new Promise((resolve, reject) => {
             try {
